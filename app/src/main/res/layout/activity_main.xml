@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rps.rockpaperscissors.MainActivity">
+
+    <Button
+        android:onClick="onRockButtonClicked"
+
+        android:id="@+id/rockBtn"
+        android:text="ROCK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="onPaperButtonClicked"
+
+        android:text="PAPER"
+        android:id="@+id/paperBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/rockBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginEnd="70dp" />
+
+    <Button
+        android:onClick="onScissorsButtonClicked"
+
+        android:text="SCISSORS"
+        android:id="@+id/scissorsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/paperBtn"
+        android:layout_toLeftOf="@+id/paperBtn"
+        android:layout_toStartOf="@+id/paperBtn"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+
+
+</RelativeLayout>
